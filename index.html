@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drop Randomizer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  </head>
+  <body>
+
+    <section class="randomized-drop"></section>
+
+    <script type="text/x-template" id="random-drop-template">
+      <header class="drop">
+        <h1>
+          <span class="drop__special-descriptor"><%= descriptor %></span>
+          <span class="drop__attribute-mutator" style="color:"><%= mutator %></span>
+          <span class="drop__weapon-type"><%= type %></span>
+        </h1>
+        <h3 class="drop__weapon-manufacturer">by <%= manufacturer %></h3>
+      </header>
+    </script>
+
+    <script src="assets/javascript/vendor/pouchdb.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+  </body>
+</html>
